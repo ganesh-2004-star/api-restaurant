@@ -90,11 +90,11 @@ WSGI_APPLICATION = 'newproject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'rms_project',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'rms_newone',
         'USER': 'postgres',
         'PASSWORD': 'admin', 
-        'HOST': '127.0.0.1',
+        'HOST': 'localhost',
         'PORT': '5432',
         
     }
@@ -116,6 +116,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
     {
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+        
     },
 ]
 
